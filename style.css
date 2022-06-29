@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    border-top: 10px solid red ;
+    width: 100%;
+    background-image: url('img/backgrounf.jpg');
+    /* align-items: center; */
+}
+
+.principal{
+    background-color: white;
+    display: grid;
+    /* grid-template-areas: 
+    ""
+    ""
+    ""
+    ; */
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 200px;
+    align-items: center;
+    align-content: center;
+}
+
+.imagen{
+    margin: 0 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid red;
+    /* padding: 10px 20px 0; */
+}
+
+
+.mainPage{
+    /* background-color: grey; */
+    padding: 20px;
+    height: 100%;
+    width: 97.4%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    grid-template-areas: 
+    "tittle tittle"
+    "username password"
+    "input1 input2"
+    "button button";
+}
+
+.mainPage h1{
+    grid-area: tittle;
+}
+
+.mainPage .username{
+    grid-area: username;
+    margin: 10px 0;
+}
+
+.mainPage #user{
+    grid-area: input1;
+}
+
+.mainPage button{
+    grid-area: button;
+}
+
+button{
+    color: white;
+    background: linear-gradient(to bottom, red, rgb(169, 38, 38));
+    height: 30px;
+    margin: 20px 200px 0;
+
+
+}
+
+button:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+.menu{
+    /* background-color: blueviolet; */
+    padding: 20px;
+    display: none;
+    height: 100%;
+    width: 97.4%;
+
+}
+
+.mostrarSaldo{
+    /* background-color: beige; */
+    padding: 20px;
+    display: none;
+    height: 100%;
+    width: 97.4%;
+
+}
+
+.depositarSaldo{
+    /* background-color: blue; */
+    padding: 20px;
+    display: none;
+    height: 100%;
+    width: 97.4%;
+
+}
+
+.retirarSaldo{
+    /* background-color: brown; */
+    padding: 20px;
+    display: none;
+    height: 100%;
+    width: 97.4%;
+
+}

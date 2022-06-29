@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero ATM</title>
+</head>
+
+<body>
+
+
+    <section class="principal">
+
+        <section class="imagen">
+
+            <img src="./img/masebanck.png" alt="Banco" class="bankImage">
+        
+        </section>
+
+
+
+
+    <main class="mainPage" id="mainPage">
+
+        <h1>Cajero ATM</h1>
+        <label for="usuario" class="usename">Usuario</label>
+        <input type="text" name="user" id="user">
+        <label for="password" class="password">Contraseña</label>
+        <input type="password" name="password" id="password">
+
+        <button onclick="getData()">Ingresar</button>
+
+    </main>
+
+
+    <div class="menu" id="menu">
+        <h2>Bienvenido <span id="name"></span></h2>
+        <button id="consultar">Consultar saldo</button>
+        <button id="depositar">Depositar</button>
+        <button id="retirar">Retirar</button>
+        <button id="salir">Salir</button>
+    </div>
+
+
+    <div class="mostrarSaldo" id="mostrarSaldo">
+        <h1>Tu saldo es <span id="saldo"></span></h1>
+        <button class="regresar" id="regresar">Regresar</button>
+    </div>
+
+
+    <div class="depositarSaldo" id="depositarSaldo">
+        <h1>Tu saldo es <span id="money1"></span></h1>
+        <p>¿Cuanto deseas depositar?</p>
+        <input type="number" id="deposito">
+        <button id="confirmDepositos">Depositar</button>
+        <button class="regresar" id="regresar1">Regresar</button>
+
+        <p id="deposito-hecho"></p>
+    </div>
+
+
+    <div class="retirarSaldo" id="retirarSaldo">
+        <h1>Tu saldo es <span id="money2"></span></h1>
+        <p>¿Cuanto deseas retirar?</p>
+        <input type="number" id="retiro">
+        <button id="confirmRetiro">Retirar</button>
+        <button class="regresar" id="regresar2">Regresar</button>
+
+        <p id="retiro-hecho"></p>
+
+
+    </div>
+
+
+    </section>
+    
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
